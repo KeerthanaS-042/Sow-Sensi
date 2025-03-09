@@ -1,0 +1,9 @@
+step 1 - Open terminal and type => 'cd public'
+step 2 - type => 'npm init -y'
+step 3 - type => 'npm install express dotenv @google/generative-ai'
+step 4 - type => 'node server.js' // to run the backend of the chatbot
+step 5 - open a new terminal
+step 6 - type => 'yarn install'
+step 7 - type => 'yarn start' // to run the whole project including both the weather forcast and chatbot features
+
+for each terminal you have to install the yarn package 

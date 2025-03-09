@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+    <style>
+      /* Add some basic styling for the video background and button */
+      .video-background {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1; /* Ensure the video is in the background */
+        object-fit: cover; /* Ensure the video covers the background */
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay loop muted class="video-background">
+      <source src="climate.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- Button that navigates to the chatbot page -->
+    <button class="robo-button" onclick="navigateToPage()">🤖</button>
+
+    <div id="root"></div>
+
+    <script>
+      function navigateToPage() {
+        window.location.href = 'cb.html';  // Change to the path of your chatbot file
+      }
+    </script>
+  </body>
+</html>
